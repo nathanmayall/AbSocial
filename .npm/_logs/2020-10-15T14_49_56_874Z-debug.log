@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'test' ]
+2 info using npm@6.14.8
+3 info using node@v14.13.1
+4 verbose config Skipping project config: /home/nath/.npmrc. (matches userconfig)
+5 verbose run-script [ 'pretest', 'test', 'posttest' ]
+6 info lifecycle nath@1.0.0~pretest: nath@1.0.0
+7 info lifecycle nath@1.0.0~test: nath@1.0.0
+8 verbose lifecycle nath@1.0.0~test: unsafe-perm in lifecycle true
+9 verbose lifecycle nath@1.0.0~test: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/nath/node_modules/.bin:/home/nath/.vscode-server/bin/d2e414d9e4239a252d1ab117bd7067f125afd80a/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+10 verbose lifecycle nath@1.0.0~test: CWD: /home/nath
+11 silly lifecycle nath@1.0.0~test: Args: [ '-c', 'echo "Error: no test specified" && exit 1' ]
+12 silly lifecycle nath@1.0.0~test: Returned: code: 1  signal: null
+13 info lifecycle nath@1.0.0~test: Failed to exec test script
+14 verbose stack Error: nath@1.0.0 test: `echo "Error: no test specified" && exit 1`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+14 verbose stack     at EventEmitter.emit (events.js:314:20)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+14 verbose stack     at ChildProcess.emit (events.js:314:20)
+14 verbose stack     at maybeClose (internal/child_process.js:1047:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
+15 verbose pkgid nath@1.0.0
+16 verbose cwd /home/nath
+17 verbose Linux 4.19.0-11-amd64
+18 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "test"
+19 verbose node v14.13.1
+20 verbose npm  v6.14.8
+21 error code ELIFECYCLE
+22 error errno 1
+23 error nath@1.0.0 test: `echo "Error: no test specified" && exit 1`
+23 error Exit status 1
+24 error Failed at the nath@1.0.0 test script.
+24 error This is probably not a problem with npm. There is likely additional logging output above.
+25 verbose exit [ 1, true ]
