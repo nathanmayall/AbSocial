@@ -2,3 +2,4 @@ node_modules
 config.js
 .*
 !/.gitignore
+.node_repl_history
