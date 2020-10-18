@@ -19,7 +19,6 @@ function PostForm(){
                  query: FETCH_POSTS_QUERY
             });
 
-
             let newData = [ ...data.getPosts ];
             newData = [result.data.getPosts,  ...data.getPosts ];
             proxy.writeQuery({ 
