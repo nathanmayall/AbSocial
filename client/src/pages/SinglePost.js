@@ -4,6 +4,7 @@ import { Card, Form, Image, Grid, Button, Label, Icon } from 'semantic-ui-react'
 import moment from 'moment';
 import LikeButton from '../components/LikeButton';
 import DeleteButton from '../components/DeleteButton';
+import Tooltip from '../components/Tooltip';
 
 import { AuthContext } from '../context/auth';
 
@@ -63,7 +64,8 @@ if(!getPost){
                     <hr/>
                     <Card.Content extra>
                         <LikeButton user={user} post={{ id, likeCount, likes }}/>
-                        <Button as="div" labelPosition="right" onClick={() => console.log('comment added on post')}>
+                      <Tooltip content="Comment on post">
+                      <Button as="div" labelPosition="right" onClick={() => console.log('comment added on post')}>
                             <Button basic color="blue">
                                 <Icon name="comment alternate outline"/>
                             </Button>
@@ -71,6 +73,7 @@ if(!getPost){
                                 {commentCount}
                                 </Label>
                         </Button>
+                      </Tooltip>
                         {user && user.username === username && (
                             <DeleteButton postId={id} callback={deletePostCallback} />
                         )}
