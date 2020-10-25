@@ -7,7 +7,7 @@ const httpLink = createHttpLink({
     uri: 'http://10.0.1.155:50000'
 });
 
-const authLink = setContext(() => {
+const authLink = setContext(() => { 
     const token = localStorage.getItem('jwtToken');
     return{
         headers: {
@@ -21,7 +21,7 @@ const client = new ApolloClient({
     cache: new InMemoryCache()
 });
 
-export default (
+export default ( 
     <ApolloProvider client={client}>
         <App/>
     </ApolloProvider>

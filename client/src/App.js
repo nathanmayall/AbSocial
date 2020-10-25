@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import SinglePost from './pages/SinglePost';
 
+
 function App() {
   return (
     <AuthProvider>

@@ -1,0 +1,6 @@
+module.exports = {
+
+RECAPTCHA_SECRET_KEY: '6LfiXdsZAAAAAOxwleK2wDXVpjtN132YiRcVVb-9',
+RECAPTHA_SITE_KEY: '6LfiXdsZAAAAANiYJWj39pWrAywmU1y5aD5TSU_R'
+
+};

@@ -75,6 +75,7 @@ function Register(props) {
                 Register 
                 </Button>   
             </Form>
+            
             {Object.keys(errors).length > 0 && (<div className="ui error message">
                 <ul className="list">
                     {Object.values(errors).map(value => (
